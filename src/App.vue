@@ -90,7 +90,7 @@
     </transition-group>
     <transition name="modal">
       <section v-show="modal" class="modal" @click="modal = false">
-        <article class="modal__content">
+        <article class="modal__content" @click.stop>
           <h4 class="modal__title">To get the code</h4>
           <h4 class="modal__title">that goes with this demo</h4>
           <h5 class="modal__link">
